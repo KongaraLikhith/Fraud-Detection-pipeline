@@ -118,7 +118,7 @@ with DAG(
 
     alert_task = EmailOperator(
         task_id='send_alert',
-        to='lkongara31@gmail.com',
+        to='yourmail@gmail.com',
         subject='Fraud Alert: {{ ti.xcom_pull(task_ids="predict_fraud", key="fraud_count") }} suspicious transactions detected',
         html_content="""<h3>Alert!</h3>
                         <p>Suspicious transactions were flagged by the ML model. Check flagged_creditcard.csv for details.</p>""",
