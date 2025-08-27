@@ -1,0 +1,72 @@
+# -----------------------------
+# Vim
+# -----------------------------
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~ 
+Session.vim
+.netrwhist
+*~
+
+# -----------------------------
+# SublimeText
+# -----------------------------
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+sftp-config.json
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.env
+.venv/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+airflow/logs/
+*.out
+
+# -----------------------------
+# Airflow
+# -----------------------------
+airflow.cfg
+unittests.cfg
+webserver_config.py
+dags/__pycache__/
+plugins/__pycache__/
+airflow.db
+*.db
+
+# -----------------------------
+# Docker
+# -----------------------------
+*.pid
+*.seed
+*.pid.lock
+*.tar
+*.bak
+*.swp
+*.tmp
+tmp/
+volumes/
+
+-----------------------------
+Optional: exclude local data outputs
+-----------------------------
+/dags/data/fraud.db
+/dags/data/fraud_model.pkl
+/dags/data/creditcard.csv
+/dags/data/extracted_data.csv
+/dags/data/flagged_creditcard.csv
+
